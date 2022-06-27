@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* NAVIGATION BAR */
+nav {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  padding: 20px 30px;
+  box-shadow: 0px 3px 7.45px rgba(0, 0, 0, 0.1);
+}
+
+.nav--logo {
+  max-width: 100px;
+}
+
+/* HERO SECTION */
+section {
+  padding: 20px;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+}
+.hero--grid {
+  align-self: center;
+  max-width: 400px;
+}
+
+.hero--header {
+  margin-bottom: 16px;
+}
+
+.hero--text {
+  margin-top: 0;
+}
+
+/* CARD SECTION */
+.card-section {
+  width: 176px;
+  padding: 20px;
+  font-size: 12px;
+}
+
+.card--image {
+  width: 100%;
+  border-radius: 9px;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+}
+
+.star--icon {
+  width: 14px;
+  height: 14px;
+  border-radius: 0.5px;
+}
+
+.text-gray {
+  color: #918e9b;
+}
+
+.text-bold {
+  color: #222222;
+  font-weight: 600;
+}
