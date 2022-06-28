@@ -8,6 +8,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.container {
+  max-width: 515px;
+}
+
 /* NAVIGATION BAR */
 nav {
   width: 100vw;
