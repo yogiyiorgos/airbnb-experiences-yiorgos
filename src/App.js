@@ -3,23 +3,17 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Card from './components/Card';
 import './styles.css';
-
-import katieImg from './images/katie-zaferes.png';
+import data from './data';
 
 function App() {
+  const cardElements = data.map((entry) => (
+    <Card key={entry.id} entry={entry} />
+  ));
   return (
     <div className='container'>
       <Navbar />
       <Hero />
-      <Card
-        img={katieImg}
-        alt='Katie Zaferes smilling in swimsuit'
-        rating='5.0'
-        reviewCount={6}
-        country='USA'
-        title='Life lessons with Katie Zaferes'
-        price={136}
-      />
+      <section className='cards-list'>{cardElements}</section>
     </div>
   );
 }
